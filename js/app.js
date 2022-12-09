@@ -1,6 +1,8 @@
 /*-------------------------------- Constants --------------------------------*/
-
-
+const winMssg = 'has won!';
+const tieMssg = 'Its a tie!'
+const activeMssg = 'The game is on!'
+const winningCombos = [[0,1,2],[0,4,8],[0,3,6],[1,4,7],[2,4,6],[2,5,8],[3,4,5],[6,7,8]];
 
 /*---------------------------- Variables (state) ----------------------------*/
 let board, turn, winner, tie;
@@ -27,7 +29,7 @@ const statusMssg = document.querySelector('#status-message');
 function init(){
   initBoard();
   turn = -1;
-  winner = false;
+  winner = {status:false, victor:'player 1'};
   tie = false;
   render();
 }
@@ -48,7 +50,11 @@ function renderBoard(){
 }
 
 function renderMessage(){
-  if(winner === false && tie === false){
-
+  if(winner.status === false && tie === false){
+    statusMssg.innerText = activeMssg;
+  }else if(tie === true){
+    statusMssg.innerText = tieMssg;
+  }else{
+    statusMssg.innerText = `${winner['victor']} ${winMssg}`;
   }
 }
