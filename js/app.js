@@ -19,3 +19,18 @@ const statusMssg = document.querySelector('#status-message');
 
 /*-------------------------------- Functions --------------------------------*/
 
+function init(){
+  initBoard();
+  turn = -1;
+  winner = false;
+  tie = false;
+  //render();
+}
+
+function initBoard(){
+  board = [null,null,null,null,null,null,null,null,null];
+}
+
+function render(){
+  
+}
