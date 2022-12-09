@@ -22,7 +22,12 @@ const statusMssg = document.querySelector('#status-message');
 
 /*----------------------------- Event Listeners -----------------------------*/
 
-
+sqrEls.forEach(sqr =>{
+  sqr.addEventListener('click',function(){
+    handleClick(sqr);
+    renderBoard();
+  })
+})
 
 /*-------------------------------- Functions --------------------------------*/
 
@@ -45,7 +50,7 @@ renderMessage();
 
 function renderBoard(){
   for (let i = 0; i < board.length; i++){
-    sqrEls[i].innerText = board[i];
+    board[i] = sqrEls[i].innerText;
   }
 }
 
@@ -57,4 +62,14 @@ function renderMessage(){
   }else{
     statusMssg.innerText = `${winner['victor']} ${winMssg}`;
   }
+}
+
+function handleClick(evt){
+if (turn === -1){
+  evt.innerText = 'X';
+}else if (turn === 1){
+  evt.innerText = 'O';
+}
+turn*=-1;
+render();
 }
