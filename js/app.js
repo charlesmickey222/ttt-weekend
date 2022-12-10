@@ -77,20 +77,18 @@ placePiece(evt);
 renderBoard();
 checkForWinner();
 checkTie();
-switchTurn();
 render();
 }
 
 function placePiece(element){
-  if(running){
     if(element.innerText === ''){
       if (turn === -1){
       element.innerText = 'X';
       }else if (turn === 1){
       element.innerText = 'O';
       }
-    }
-  }else{
+      switchTurn();
+    }else{
     statusMssg.innerText = 'start a new game!';
   }
 }
