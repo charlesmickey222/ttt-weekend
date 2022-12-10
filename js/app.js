@@ -20,7 +20,7 @@ for (let i =0; i<9; i++){
 const statusMssg = document.querySelector('#status-message');
 
 const rstBtn = document.querySelector('#reset-button');
-const startBtn = document.querySelector('#start-button');
+//const startBtn = document.querySelector('#start-button');
 /*----------------------------- Event Listeners -----------------------------*/
 
 sqrEls.forEach(sqr =>{
@@ -33,7 +33,7 @@ rstBtn.addEventListener('click', function(){
   reset();
 })
 
-startBtn.addEventListener('click', init());
+//startBtn.addEventListener('click', init());
 /*-------------------------------- Functions --------------------------------*/
 
 function init(){
