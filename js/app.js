@@ -33,7 +33,7 @@ rstBtn.addEventListener('click', function(){
   reset();
 })
 
-//startBtn.addEventListener('click', init());
+boardEl.addEventListener('load', init())
 /*-------------------------------- Functions --------------------------------*/
 
 function init(){
