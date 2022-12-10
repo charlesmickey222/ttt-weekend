@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur:ital@1&family=Nabla&family=UnifrakturCook&display=swap');
 body {
     background-color: gray;
 	/* Use a system font, if none are available use an available sans-sarif   font */
@@ -19,7 +20,16 @@ section.board {
 }
 
 h1{
-  
+  font-family: 'Fruktur', cursive;
+  font-weight:900;
+font-size: 120px;
+color:black;
+margin-bottom: 10px;
+}
+h2{
+  font-family: 'Fruktur', cursive;
+  font-size:60px;
+  margin-top: 10px;
 }
 div {
   border: 2px solid black;

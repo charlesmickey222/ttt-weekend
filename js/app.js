@@ -105,7 +105,7 @@ function switchTurn(){
 }
 
 function checkTie(){
-  if(board.some(sqr => {return sqr.innerText ==='null'})){
+  if(winner.status === true || board.some(sqr => {return sqr.innerText ==='null'})){
     tie = false;
   }else if(board.every(sqr =>{return sqr !== ''})){
     tie = true;
