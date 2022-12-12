@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fruktur:ital@1&family=Nabla&family=UnifrakturCook&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fruktur:ital@1&family=Nabla&family=Press+Start+2P&family=UnifrakturCook&display=swap');
 body {
     background-color: rgb(145, 118, 82);
 	/* Use a system font, if none are available use an available sans-sarif   font */
@@ -14,10 +14,13 @@ body {
 
 section.board {
   display: grid;
-  grid-template-rows: repeat(3, 10vmin);
-  grid-template-columns: repeat(3, 10vmin);
+  grid-template-rows: repeat(3, 15vmin);
+  grid-template-columns: repeat(3, 15vmin);
   grid-gap: 0vmin;
+  font-family: 'Press Start 2P', cursive;
+  font-size:40px;
 }
+
 
 h1{
   font-family: 'Fruktur', cursive;
@@ -32,8 +35,25 @@ h2{
   margin-top: 10px;
 }
 div {
-  border: 2px solid black;
+  border: 3px solid black;
+  border-radius:10px;
   font-size: 8vmin;
   text-align: center;
-  vertical-align: middle;
+  padding-top: 25px;
+}
+
+button{
+  background-color:transparent;
+  font-family: 'Fruktur', cursive;
+  font-size:30px;
+  border-color: darkgreen;
+  border-radius: 10px;
+  margin-top:10px;
+  padding:-5px;
+}
+
+button:hover{
+  background-color:rgba(178, 202, 21, .75);
+  cursor: pointer;
+  
 }

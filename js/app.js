@@ -46,8 +46,8 @@ function renderBoard(){
   for (let i = 0; i < board.length; i++){board[i] = sqrEls[i].innerText;}
 }
 
-function renderMessage(){3
-  if(winner.status === false && tie === false){statusMssg.innerText = activeMssg;
+function renderMessage(){
+  if(winner.status === false && tie === false){
   }else if(tie === true){
     statusMssg.innerText = tieMssg;
   }else if (winner.status === true){
@@ -65,9 +65,18 @@ render();
 
 function placePiece(element){
     if(winner.status === false && element.innerText === ''){
-      if (turn === -1){element.innerText = 'X';}
-      else if (turn === 1){element.innerText = 'O';}
+      if (turn === -1){
+        element.innerText = 'X';
+        statusMssg.innerText = 'now O'
+      }
+      else if (turn === 1){
+        element.innerText = 'O';
+        statusMssg.innerText = 'now X'
+      }
       switchTurn();
+    }else{
+      statusMssg.innerText = 'not so fast';
+      renderMessage();
     }
 }
 
