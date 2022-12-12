@@ -104,6 +104,7 @@ function checkForWinner(){
 function reset(){
   resetBoard();
   init();
+  statusMssg.innerText = 'new game!';
 }
 
 function resetBoard(){
