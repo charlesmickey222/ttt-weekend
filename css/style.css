@@ -68,21 +68,21 @@ button:hover{
 
 @keyframes buttonHover{
   0%{
-    background-image:radial-gradient(circle, rgb(255, 194, 153) 20%,rgb(112, 153, 0)50%,rgb(255, 153, 153)30%);
+    background-image:radial-gradient(rgb(255, 194, 153) 20%,rgb(112, 153, 0)50%,rgb(255, 153, 153)30%);
     border: 3px solid rgb(223, 255, 137);
     }
   25%{
-    background-image:radial-gradient(circle, rgb(255, 153, 153)50%, rgb(255, 194, 153)30%,rgb(112, 153, 0)20%);
+    background-image:radial-gradient(rgb(255, 153, 153)50%, rgb(255, 194, 153)30%,rgb(112, 153, 0)20%);
   }
   50%{
-    background-image:radial-gradient(circle, rgb(112, 153, 0)30%, rgb(255, 153, 153)20%, rgb(255, 153, 153)50%);
+    background-image:radial-gradient(rgb(112, 153, 0)30%, rgb(255, 153, 153)20%, rgb(255, 153, 153)50%);
     border:none;
   }
   75%{
-    background-image:radial-gradient(circle, rgb(255, 153, 153) 20%,rgb(112, 153, 0)50%,rgb(255, 153, 153)30%);
+    background-image:radial-gradient( rgb(255, 153, 153) 20%,rgb(112, 153, 0)50%,rgb(255, 153, 153)30%);
   }
   100%{
-    background-image:radial-gradient(circle, rgb(255, 153, 153)50%, rgb(255, 153, 153)30%,rgb(112, 153, 0)20%,);
+    background-image:radial-gradient(rgb(255, 153, 153)50%, rgb(255, 153, 153)30%,rgb(112, 153, 0)20%,);
     border: 3px solid rgb(223, 255, 137);
   }
 }
